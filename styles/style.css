@@ -5,39 +5,64 @@
 */
 
 /* New Color Palette:
-* Lightest (Text):         #6bb300     (text, contrast with dark)
-* Dark Green (Primary):    #007d00      
-* Light Green (Secondary): #00b3b3      (canvas background)
-* Reddish-Brown (Accent):  #00b300
 */
 
 .bg-info {
-    background-color: #00b3b3 !important; /* Light green for secondary backgrounds */
+    background-color: #D1DA2F !important; /* Light green for secondary backgrounds */
 }
 
 .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
-    color: #007d00;            /* Dark green for brand name & nav links for visibility */
+    color: #064A05            /* Dark green for brand name & nav links for visibility */
 }
 
 .btn-info {
-    color: #6bb300;            /* Lightest shade for text on info button for contrast */
-    background-color: #00b3b3; /* Light green for button background */
+    color: #92C71B;            /* Lightest shade for text on info button for contrast */
+    background-color: #D1DA2F; /* Light green for button background */
     border-color: #007d00;     /* Dark green for button border */
 }
 
 .btn-primary {
-    color: #6bb300;            /* Lightest shade for text */
+    color: #92C71B;            /* Lightest shade for text */
     font-size: 150%;
     background-color: #007d00; /* Dark green for primary button background */
-    border-color: #00b300;     /* Reddish-brown for border to use as accent */
+    border-color: #C5E793;     /* Reddish-brown for border to use as accent */
     border-width: thick;
 }
 
+/* Style for radio button labels when not selected */
+.btn-outline-primary {
+    color: #007d00; /* Dark green text color for contrast */
+    border-color: #D1DA2F; /* Light green border color */
+    border-width: 3px;
+    
+}
+
+/* Style for radio button labels on hover or focus */
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+    color: #f2fbf2; /* Lightest color for text */
+    background-color: #D1DA2F; /* Light green background */
+    border-color: #007d00; /* Dark green border for emphasis */
+    border-width: 3px;
+}
+
+/* Style for the active (checked) radio button label */
+.btn-check:checked + .btn-outline-primary, .btn-check:active + .btn-outline-primary {
+    color: #f2fbf2; /* Lightest color for text */
+    background-color: #007d00; /* Dark green background for primary action */
+    border-color: #C5E793; 
+    border-width: 3px;
+}
+
 body {
-    background-color: #6bb300; /* Lightest shade for body background to follow the 60% rule */
+    background-color: #92C71B; /* Lightest shade for body background to follow the 60% rule */
 }
 
 .navbar-brand{
-    font-family: 'Caveat', cursive; /*change the font name for what you have*/
-    font-size: 2.25rem;
+    font-family: "Grechen Fuemen", serif; /*change the font name for what you have*/
+    font-size: 3.25rem;
+}
+
+.font-change {
+    font-weight: bold;
+    font-size: large;
 }
